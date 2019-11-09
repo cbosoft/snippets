@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: tdlib new plot 
+# key: tdplot
+# --
+import numpy as np
+
+from tdlib.plot import get_plot_name, plot_init
+from tdlib.query import query_db
+
+plt = plot_init()
+
+# query db, plot code goes here
+$0
+
+plt.savefig(get_plot_name())
